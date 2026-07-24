@@ -1,0 +1,2 @@
+export type Profile={id:string;display_name:string;role:"Admin"|"Coordinator";college_account:"ALL"|"CBIT"|"CSSH";is_active:boolean};
+export type Row={id?:number;college_account:"CBIT"|"CSSH";instructor:string;course:string;section:string;subject:string;day:string;schedule_text:string;cronasia_pmvgo_checks:string;class_material_1_2:string;class_material_3_4:string;activity_1_2:string;activity_3_4:string;total_classes:number;present:number;absent:number;remarks:string;monitoring_status:string;created_by?:string};
