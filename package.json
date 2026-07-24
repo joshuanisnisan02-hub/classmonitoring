@@ -1,0 +1,1 @@
+{"name":"class-monitoring","private":true,"version":"2.0.0","type":"module","scripts":{"dev":"vite","build":"tsc && vite build"},"dependencies":{"@supabase/supabase-js":"2.52.1","xlsx":"0.18.5"},"devDependencies":{"@types/node":"24.1.0","typescript":"5.8.3","vite":"7.0.6"}}
