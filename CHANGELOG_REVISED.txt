@@ -1,0 +1,21 @@
+CBIT/CSSH Class Monitoring System - Full Revised Package
+
+Included in this revision:
+- Complete PHP + MySQL system folder.
+- Bigger print/PDF font sizes in assets/style.css.
+- Present and Absent computation remains based on checked Class Material and Activity/Quizzes boxes.
+- Editable Remarks field retained.
+- CBIT and CSSH login roles retained:
+  admin/admin123, cbit/cbit123, cssh/cssh123.
+- CBIT yellow header and CSSH purple header retained for print/PDF.
+- Section year checkbox filter retained.
+
+Main files for absent/present logic:
+- includes/functions.php
+- update.php
+- index.php
+
+V10
+- Made Present and Absent columns editable in dashboard.
+- Updated save logic to preserve manual Present/Absent values.
+- Added print-friendly styles for editable attendance fields.

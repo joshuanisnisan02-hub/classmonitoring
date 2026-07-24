@@ -1,0 +1,396 @@
+:root{
+  --navy:#0b2b5b;
+  --blue:#2563eb;
+  --gold:#ffc000;
+  --bg:#f3f6fb;
+  --text:#000;
+  --muted:#5f6b7a;
+  --line:#cbd5e1;
+  --danger:#b91c1c;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);font-family:Arial,Helvetica,sans-serif;color:var(--text)}
+a{text-decoration:none;color:var(--blue)}
+.container{max-width:1120px;margin:0 auto;padding:10px}
+.topbar{background:#092653;color:white;border-bottom:5px solid var(--gold)}
+.topbar-inner{max-width:1120px;margin:0 auto;padding:12px 10px;display:flex;align-items:center;gap:14px}
+.logo{width:64px;height:64px;object-fit:contain;background:white;border-radius:50%;padding:3px}
+.brand h1{margin:0;font-size:22px;letter-spacing:.3px}.brand p{margin:3px 0 0;color:#e5efff;font-size:12px}
+.nav{margin-left:auto;display:flex;gap:8px;flex-wrap:wrap}
+.btn{border:1px solid #cfd8e3;border-radius:8px;padding:9px 13px;font-size:13px;font-weight:700;cursor:pointer;background:white;color:#0b2b5b;display:inline-flex;align-items:center;justify-content:center}
+.btn-primary{background:#2563eb;color:#fff;border-color:#2563eb}.btn-gold{background:#f5b51b;color:#111;border-color:#f5b51b}.btn-danger{background:#fee2e2;color:#991b1b;border-color:#fecaca}.btn-outline{background:#fff;color:#092653}
+.alert{padding:10px 12px;border-radius:8px;margin-bottom:10px;font-weight:700;font-size:13px}.alert-success{background:#dcfce7;color:#166534}.alert-error{background:#fee2e2;color:#991b1b}.alert-warning{background:#fef3c7;color:#92400e}.alert-info{background:#dbeafe;color:#1e40af}
+.card{background:white;border:1px solid var(--line);border-radius:12px;padding:16px;margin:12px 0}.card-title{margin:0 0 10px;color:#092653}.helper{font-size:13px;color:var(--muted);line-height:1.4}.footer-note{text-align:center;color:var(--muted);font-size:12px;margin:18px 0}
+label{font-weight:700;font-size:13px;color:#253858}.field,input,select,textarea{width:100%;border:1px solid var(--line);border-radius:7px;padding:8px 10px;background:white;font-size:13px;color:#111}.form-row{display:flex;gap:10px;flex-wrap:wrap;align-items:end}.form-row>*{min-width:180px;flex:1}.grid{display:grid;gap:12px}.grid-2{grid-template-columns:repeat(2,minmax(0,1fr))}.grid-3{grid-template-columns:repeat(3,minmax(0,1fr))}.form-actions{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin-top:10px}.upload-box{border:2px dashed #9fb0c8;border-radius:14px;background:#f8fbff;padding:24px;text-align:center}.upload-box input{max-width:540px;margin:auto;background:white}
+.exact-actions{display:flex;gap:8px;justify-content:flex-end;align-items:center;margin-bottom:8px;flex-wrap:wrap}.inline-clear{margin:0}
+.report-header{background:var(--header-color,var(--gold));border:1px solid #000;display:grid;grid-template-columns:130px 1fr 130px;align-items:start;text-align:center;height:172px;margin:0;padding:0}.report-header .header-logo{display:flex;align-items:flex-start;justify-content:center;padding-top:12px}.report-header img{width:105px;height:105px;object-fit:contain}.report-header .header-text{padding-top:3px;line-height:1.15}.report-header h2{font-size:21px;margin:0 0 4px 0;font-weight:900;letter-spacing:.5px}.report-header p{font-size:14px;margin:1px 0;font-weight:500}.report-header .program-title{font-size:18px;font-weight:900;margin-top:26px;text-transform:uppercase}.report-header .covered-date{font-weight:900;margin-top:3px}
+.table-wrap{overflow:auto;background:white}.monitoring-table th,.monitoring-table td{border:1px solid #000;padding:4px;font-size:11px}.monitoring-table th{text-align:center;font-weight:900}.exact-wrap{border:0;border-radius:0;margin:0}.monitoring-table{border-collapse:collapse;width:100%;table-layout:fixed;background:white}.exact-table{min-width:1060px}.exact-table th,.exact-table td{border:1px solid #000;padding:1px 4px;font-size:10.5px;line-height:1.1;vertical-align:middle;color:#000}.exact-table th{background:#fff;text-align:center;font-weight:900;height:27px}.exact-table thead tr:nth-child(2) th{height:14px;font-size:10px}.exact-table td{height:15px}.col-instructor{width:230px}.col-section{width:68px}.col-subject{width:58px}.col-day{width:52px}.col-pmvgo{width:74px}.col-week{width:72px}.col-total{width:56px}.col-present{width:51px}.col-absent{width:51px}.col-remarks{width:104px}.instructor-cell{text-align:left;font-weight:400}.section-cell,.day-cell,.number-cell,.remarks-cell{text-align:center}.subject-cell{text-align:center;white-space:nowrap;padding-left:2px!important;padding-right:2px!important;font-weight:400}.check-cell,.mark-cell{text-align:center}.remarks-cell input{border:0;border-radius:0;padding:0;text-align:center;font-size:10.5px;background:transparent;height:16px}.remarks-text{font-weight:400}.check-pair{display:flex;justify-content:center;align-items:center;gap:4px;white-space:nowrap}.check-pair label{font-size:9px;font-weight:700;display:inline-flex;align-items:center;gap:1px;color:#000;margin:0}.check-pair input{width:12px!important;height:12px!important;margin:0;padding:0;accent-color:#111}.single-check{display:flex;justify-content:center;align-items:center;margin:0}.single-check input{width:13px!important;height:13px!important;margin:0;accent-color:#111}.exact-save{justify-content:flex-end;margin:10px 0 0}.no-records{text-align:center}.print-toolbar{display:flex;justify-content:flex-end;gap:8px;margin-bottom:8px}
+.signature-table{width:100%;border-collapse:collapse;background:white;margin-top:0;table-layout:fixed}.signature-table td{border:1px solid #d9d9d9;font-size:10.5px;color:#000;padding:1px 3px;height:18px}.exact-signature-table{border-left:0;border-right:0}.exact-signature-table td{border-color:#d9d9d9}.signature-label{text-align:left;height:22px;vertical-align:middle}.signature-space{height:52px}.signature-name{text-align:center;font-weight:900;text-decoration:underline;white-space:nowrap}.signature-title{text-align:center}.signature-export td{border:1px solid #d9d9d9;font-size:10px;padding:2px 4px}
+@media(max-width:900px){.topbar-inner{align-items:flex-start;flex-wrap:wrap}.nav{margin-left:0;width:100%}.brand h1{font-size:18px}.container{padding:8px}.report-header{grid-template-columns:80px 1fr 80px;height:142px}.report-header img{width:68px;height:68px}.report-header h2{font-size:15px}.report-header p{font-size:11px}.report-header .program-title{font-size:13px;margin-top:16px}.exact-table{min-width:1040px}}
+@media print{
+  body{background:white}.topbar,.no-print,.alert,.footer-note{display:none!important}.container{max-width:none;padding:0}.report-header{page-break-inside:avoid}.table-wrap{overflow:visible}.exact-table{min-width:0}.exact-table th,.exact-table td{font-size:8.5px;padding:1px 2px;height:13px}.exact-table thead tr:nth-child(2) th{font-size:8px}.report-header{height:172px}.report-header h2{font-size:20px}.report-header p{font-size:13px}.report-header .program-title{font-size:17px}.report-header img{width:100px;height:100px}.mark-cell{font-size:8px;white-space:nowrap}.print-remarks{text-align:center}@page{size:landscape;margin:6mm}
+}
+
+.sig-c1{width:230px}.sig-c2{width:68px}.sig-c3{width:58px}.sig-c4{width:52px}.sig-c5{width:74px}.sig-c6,.sig-c7,.sig-c8,.sig-c9{width:72px}.sig-c10{width:56px}.sig-c11{width:51px}.sig-c12{width:51px}.sig-c13{width:104px}
+
+/* v5: program tabs, search, and non-overlapping Excel-style signature area */
+.filter-bar{display:flex;align-items:center;justify-content:space-between;gap:10px;margin:8px 0;flex-wrap:wrap}
+.program-tabs{display:flex;gap:6px;flex-wrap:wrap}
+.program-tab{border:1px solid #000;background:#fff;color:#000;padding:7px 10px;font-size:12px;font-weight:900;text-transform:uppercase}
+.program-tab.active{background:#092653;color:#fff;border-color:#092653}
+.search-form{display:flex;align-items:center;gap:6px;flex-wrap:wrap;margin-left:auto}
+.search-form input[type="search"]{width:280px;max-width:100%;height:34px;border:1px solid #94a3b8;border-radius:6px;padding:7px 10px;font-size:13px;background:#fff}
+.exact-table{min-width:1090px}.col-subject{width:66px}.subject-cell{font-size:10px;white-space:nowrap;overflow:hidden;text-overflow:clip}
+.signature-table{table-layout:fixed;width:100%;border-collapse:collapse;background:white;margin-top:0}.signature-table td{border:1px solid #d9d9d9;color:#000;padding:2px 4px}.signature-label{font-size:10px;text-align:left;height:20px;vertical-align:middle}.signature-space{height:44px}.signature-name{font-size:9.3px;text-align:center;font-weight:900;text-decoration:underline;white-space:normal;overflow-wrap:normal;line-height:1.1}.signature-title{font-size:10px;text-align:center;height:18px;line-height:1.1}
+@media(max-width:900px){.filter-bar{align-items:stretch}.search-form{width:100%;margin-left:0}.search-form input[type="search"]{flex:1;width:auto}.exact-table{min-width:1090px}}
+@media print{.signature-label{font-size:8.5px}.signature-name{font-size:7.6px}.signature-title{font-size:8px}.signature-space{height:34px}.filter-bar{display:none!important}}
+
+
+/* v7: PDF print/logo fitting, college colors, and section-year filter */
+.report-header,.exact-header,.headerbox{
+  -webkit-print-color-adjust:exact!important;
+  print-color-adjust:exact!important;
+  color-adjust:exact!important;
+}
+.college-cssh .topbar{border-bottom-color:#6d28d9}
+.college-cssh .program-tab.active{background:#4c1d95;border-color:#4c1d95}
+.college-cbit .program-tab.active{background:#092653;border-color:#092653}
+.college-tabs{display:flex;gap:6px;flex-wrap:wrap}
+.college-tab{border:1px solid #000;background:#fff;color:#000;padding:7px 10px;font-size:12px;font-weight:900;text-transform:uppercase}
+.college-tab.active{background:var(--header-color,#ffc000);color:#000;border-color:#000}
+.college-cssh .college-tab.active{color:#fff}
+.year-filter{position:relative;display:inline-block}
+.year-filter summary{list-style:none;border:1px solid #94a3b8;border-radius:6px;background:#fff;padding:8px 10px;font-size:13px;font-weight:800;color:#092653;cursor:pointer;min-width:128px;text-align:left}
+.year-filter summary::-webkit-details-marker{display:none}
+.year-filter[open] summary{border-bottom-left-radius:0;border-bottom-right-radius:0}
+.year-menu{position:absolute;right:0;top:100%;z-index:30;background:#fff;border:1px solid #94a3b8;border-radius:0 0 8px 8px;box-shadow:0 14px 28px rgba(15,23,42,.16);padding:10px;min-width:190px;text-align:left}
+.year-menu label{display:flex;align-items:center;gap:8px;font-size:13px;font-weight:700;margin:6px 0;color:#111;white-space:nowrap}
+.year-menu input{width:14px!important;height:14px!important;margin:0;padding:0}
+.year-hint{font-size:11px;color:#64748b;margin:8px 0 0;line-height:1.25}
+.users-table{min-width:720px}.users-table th,.users-table td{font-size:13px;padding:8px;text-align:left}.users-table th{text-align:left;background:#f8fafc}
+@media print{
+  html,body{width:100%;background:#fff!important}
+  *{-webkit-print-color-adjust:exact!important;print-color-adjust:exact!important;color-adjust:exact!important}
+  .report-header{
+    background:var(--header-color,#ffc000)!important;
+    display:grid!important;
+    grid-template-columns:90px 1fr 90px!important;
+    align-items:center!important;
+    height:96px!important;
+    min-height:96px!important;
+    max-height:96px!important;
+    overflow:hidden!important;
+    border:1px solid #000!important;
+    page-break-inside:avoid!important;
+  }
+  .report-header .header-logo{
+    height:94px!important;
+    padding:4px 6px!important;
+    display:flex!important;
+    align-items:center!important;
+    justify-content:center!important;
+    overflow:hidden!important;
+  }
+  .report-header img{
+    width:72px!important;
+    height:72px!important;
+    max-width:72px!important;
+    max-height:72px!important;
+    object-fit:contain!important;
+    display:block!important;
+  }
+  .report-header .header-text{padding-top:0!important;line-height:1.05!important;overflow:hidden!important}
+  .report-header h2{font-size:14px!important;margin:0 0 2px 0!important;letter-spacing:.4px!important;line-height:1.05!important}
+  .report-header p{font-size:8.8px!important;margin:0!important;line-height:1.05!important}
+  .report-header .program-title{font-size:11px!important;margin-top:8px!important;line-height:1.05!important}
+  .report-header .covered-date{font-size:9px!important;margin-top:2px!important;font-weight:900!important}
+  .exact-table{width:100%!important;table-layout:fixed!important;min-width:0!important}
+  .exact-table th,.exact-table td{font-size:6.7px!important;line-height:1.0!important;padding:.7px 1px!important;height:10px!important}
+  .exact-table thead tr:nth-child(2) th{font-size:6.2px!important;height:9px!important}
+  .col-instructor{width:21%!important}.col-section{width:7%!important}.col-subject{width:5.5%!important}.col-day{width:5%!important}.col-pmvgo{width:7%!important}.col-week{width:7.5%!important}.col-total{width:5.5%!important}.col-present{width:4.5%!important}.col-absent{width:4.5%!important}.col-remarks{width:9%!important}
+  .mark-cell{font-size:6.1px!important;white-space:nowrap!important}.subject-cell{font-size:6.5px!important;white-space:nowrap!important;overflow:hidden!important}.signature-table{width:100%!important;table-layout:fixed!important;page-break-inside:avoid!important}.signature-table td{font-size:7px!important;height:11px!important;padding:1px 2px!important}.signature-space{height:24px!important}.signature-name{font-size:6.3px!important;white-space:normal!important}.signature-title{font-size:6.7px!important}
+  @page{size:legal landscape;margin:5mm}
+}
+
+
+/* v8: editable remarks and stronger print/PDF color + logo fitting */
+.remarks-input{
+  width:100%;
+  min-width:82px;
+  border:0!important;
+  border-radius:0!important;
+  background:transparent!important;
+  text-align:center;
+  font-size:10.5px;
+  height:17px;
+  padding:0 2px!important;
+  color:#000;
+}
+.remarks-input:focus{outline:1px solid #2563eb;background:#fff!important}
+.report-header{
+  background:var(--header-color,#ffc000)!important;
+  box-shadow:inset 0 0 0 9999px var(--header-color,#ffc000)!important;
+}
+.report-header .header-logo img{object-fit:contain!important;object-position:center center!important}
+.college-cssh .report-header{color:#000}
+@media print{
+  body{background:#fff!important}
+  .container{width:100%!important;max-width:none!important;margin:0!important;padding:0!important}
+  .report-header{
+    background:var(--header-color,#ffc000)!important;
+    box-shadow:inset 0 0 0 9999px var(--header-color,#ffc000)!important;
+    border:1px solid #000!important;
+    margin:0!important;
+  }
+  .report-header .header-logo img{object-fit:contain!important;object-position:center center!important}
+  .remarks-input{font-size:6.7px!important;height:10px!important;min-width:0!important;padding:0!important;overflow:hidden!important}
+  .print-wrap{overflow:visible!important;width:100%!important}
+}
+
+/* =========================================================
+   PRINT/PDF FONT SIZE UPDATE V3 - WAY BIGGER
+   This final block must stay at the VERY BOTTOM of style.css.
+   It overrides all earlier @media print settings.
+   ========================================================= */
+@media print{
+  @page{
+    size: legal landscape;
+    margin: 4mm;
+  }
+
+  html,
+  body{
+    width:100%!important;
+    background:#fff!important;
+  }
+
+  body{
+    zoom:1!important;
+  }
+
+  .topbar,
+  .no-print,
+  .alert,
+  .footer-note,
+  .filter-bar,
+  .print-toolbar,
+  .exact-actions,
+  .exact-save{
+    display:none!important;
+  }
+
+  .container{
+    width:100%!important;
+    max-width:none!important;
+    margin:0!important;
+    padding:0!important;
+  }
+
+  .print-wrap,
+  .table-wrap{
+    overflow:visible!important;
+    width:100%!important;
+  }
+
+  .report-header{
+    background:var(--header-color,#ffc000)!important;
+    box-shadow:inset 0 0 0 9999px var(--header-color,#ffc000)!important;
+    display:grid!important;
+    grid-template-columns:92px 1fr 92px!important;
+    align-items:center!important;
+    height:105px!important;
+    min-height:105px!important;
+    max-height:105px!important;
+    overflow:hidden!important;
+    border:1px solid #000!important;
+    margin:0!important;
+    page-break-inside:avoid!important;
+  }
+
+  .report-header .header-logo{
+    height:103px!important;
+    padding:4px 6px!important;
+    display:flex!important;
+    align-items:center!important;
+    justify-content:center!important;
+    overflow:hidden!important;
+  }
+
+  .report-header img{
+    width:78px!important;
+    height:78px!important;
+    max-width:78px!important;
+    max-height:78px!important;
+    object-fit:contain!important;
+    object-position:center center!important;
+    display:block!important;
+  }
+
+  .report-header .header-text{
+    padding-top:0!important;
+    line-height:1.05!important;
+    overflow:hidden!important;
+  }
+
+  .report-header h2{
+    font-size:15.5px!important;
+    margin:0 0 2px 0!important;
+    letter-spacing:.3px!important;
+    line-height:1.05!important;
+  }
+
+  .report-header p{
+    font-size:10px!important;
+    margin:0!important;
+    line-height:1.05!important;
+  }
+
+  .report-header .program-title{
+    font-size:12.5px!important;
+    margin-top:7px!important;
+    line-height:1.05!important;
+  }
+
+  .report-header .covered-date{
+    font-size:10.5px!important;
+    margin-top:2px!important;
+    font-weight:900!important;
+  }
+
+  .exact-table{
+    width:100%!important;
+    min-width:0!important;
+    table-layout:fixed!important;
+    border-collapse:collapse!important;
+  }
+
+  .exact-table th,
+  .exact-table td{
+    font-size:10.5px!important;
+    line-height:1.2!important;
+    padding:2px 2px!important;
+    height:17px!important;
+    vertical-align:middle!important;
+    color:#000!important;
+  }
+
+  .exact-table th{
+    font-weight:900!important;
+    text-align:center!important;
+  }
+
+  .exact-table thead tr:nth-child(2) th{
+    font-size:9.8px!important;
+    height:15px!important;
+    line-height:1.1!important;
+  }
+
+  .col-instructor{width:21%!important;}
+  .col-section{width:7%!important;}
+  .col-subject{width:6%!important;}
+  .col-day{width:5%!important;}
+  .col-pmvgo{width:7%!important;}
+  .col-week{width:7.2%!important;}
+  .col-total{width:5.2%!important;}
+  .col-present{width:5%!important;}
+  .col-absent{width:5%!important;}
+  .col-remarks{width:9%!important;}
+
+  .instructor-cell{
+    font-size:10.5px!important;
+  }
+
+  .section-cell,
+  .day-cell,
+  .number-cell,
+  .remarks-cell{
+    font-size:10.5px!important;
+  }
+
+  .subject-cell{
+    font-size:10.3px!important;
+    white-space:nowrap!important;
+    overflow:hidden!important;
+    text-align:center!important;
+    padding-left:1px!important;
+    padding-right:1px!important;
+  }
+
+  .mark-cell{
+    font-size:10px!important;
+    white-space:nowrap!important;
+  }
+
+  .check-pair{
+    gap:2px!important;
+  }
+
+  .check-pair label{
+    font-size:9.5px!important;
+    font-weight:900!important;
+    gap:1px!important;
+  }
+
+  .check-pair input{
+    width:13px!important;
+    height:13px!important;
+  }
+
+  .single-check input{
+    width:14px!important;
+    height:14px!important;
+  }
+
+  .remarks-input{
+    font-size:10.3px!important;
+    height:17px!important;
+    min-width:0!important;
+    padding:0!important;
+    overflow:hidden!important;
+    background:transparent!important;
+    color:#000!important;
+  }
+
+  .attendance-number-input{
+    font-size:10.3px!important;
+    height:17px!important;
+    min-width:0!important;
+    padding:0!important;
+    overflow:hidden!important;
+    background:transparent!important;
+    color:#000!important;
+  }
+
+  .signature-table{
+    width:100%!important;
+    table-layout:fixed!important;
+    border-collapse:collapse!important;
+    page-break-inside:avoid!important;
+  }
+
+  .signature-table td{
+    font-size:10px!important;
+    height:18px!important;
+    padding:2px 3px!important;
+    color:#000!important;
+  }
+
+  .signature-label{
+    font-size:10px!important;
+  }
+
+  .signature-space{
+    height:38px!important;
+  }
+
+  .signature-name{
+    font-size:9.8px!important;
+    white-space:normal!important;
+    line-height:1.15!important;
+  }
+
+  .signature-title{
+    font-size:9.8px!important;
+    line-height:1.15!important;
+  }
+}
